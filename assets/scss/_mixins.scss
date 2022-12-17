@@ -1,0 +1,13 @@
+@mixin img-border($color, $opacity){
+    width: 65%;
+    border-color: rgba($color, $opacity);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+}
+
+@mixin mobile{
+    @media (max-width: 991px) {
+        @content;        
+    }
+}

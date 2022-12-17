@@ -1,0 +1,41 @@
+
+//variables
+// primary color
+$Moderate-violet: hsl(263, 55%, 52%);
+$Very-dark-grayish-blue: hsl(217, 19%, 35%);
+$Very-dark-blackish-blue: hsl(219, 29%, 14%);
+$White: hsl(0, 0%, 100%);
+$border-violet: hsl(264, 82%, 70%);
+// neutral color
+$Light-gray: hsl(0, 0%, 81%);
+$Light-grayish-blue: hsl(210, 46%, 95%);
+
+//font-size
+$size: 0.8125rem;
+
+//font-weight
+$weight:('regular': 400,
+    'medium': 500,
+    'bold': 600
+);
+//end variables
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: $size;
+    font-weight: map-get($weight, 'regular');
+    background-color: $Light-grayish-blue;
+}
+
+.row{
+    .container{
+        margin: 0;
+    }
+}
+
+h5.card-title{
+    font-size: $size;
+    font-weight: map-get($weight, 'bold');
+    margin-bottom: 0.1rem;
+}
+
